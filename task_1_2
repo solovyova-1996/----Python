@@ -1,0 +1,13 @@
+sum_numbers = 0
+for number in range(1, 1000):
+    if number % 2 != 0:
+        number **= 3
+        sum_numeral = 0
+        numeral_numbers = number
+        while numeral_numbers > 0:
+            numbers = numeral_numbers % 10
+            sum_numeral += numbers
+            numeral_numbers = numeral_numbers // 10
+        if sum_numeral % 7 == 0:
+            sum_numbers += number
+            print("число: ", number, "sum: ", sum_numbers)
